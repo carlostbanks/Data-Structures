@@ -60,7 +60,7 @@ class DoublyLinkedList:
             self.tail = new_node
         else:
             new_node.next = self.head
-            new_node.prev = new_node
+            self.head.prev = new_node
             self.head = new_node
         
     """
